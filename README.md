@@ -33,12 +33,14 @@ O texto-base de cada questão (com imagens) abre direto no PDF oficial do Inep, 
    1. `supabase/schema.sql`
    2. `supabase/seed_questions.sql`
    3. `supabase/seed_keys.sql` (o gabarito; **este arquivo não vai para o GitHub**, ele está no `.gitignore`)
-2. Em **Authentication → URL Configuration**:
-   - **Site URL:** `https://SEU-USUARIO.github.io/NOME-DO-REPO/`
-   - **Redirect URLs:** adicione a mesma URL (e `http://localhost:8000/` se for testar no seu computador).
-3. Em **Authentication → Providers → Email**, deixe ligado. Se não quiser confirmação por e-mail durante os testes,
+   Tudo fica no schema `enem`, então o projeto pode ser compartilhado com outro app sem conflito.
+2. Em **Integrations → Data API → Settings → Exposed schemas**, marque `enem` e salve.
+3. Em **Authentication → URL Configuration → Redirect URLs**, adicione
+   `https://SEU-USUARIO.github.io/NOME-DO-REPO/**` (e `http://localhost:8000/**` se for testar no seu computador).
+   Não precisa mudar a Site URL.
+4. Em **Authentication → Providers → Email**, deixe ligado. Se não quiser confirmação por e-mail durante os testes,
    desligue "Confirm email".
-4. O Realtime (usado no modo coop) já funciona com canais de broadcast e presence; não precisa ativar nada em tabelas.
+5. O Realtime (usado no modo coop) já funciona com canais de broadcast e presence; não precisa ativar nada em tabelas.
 
 ### 2. GitHub Pages
 
