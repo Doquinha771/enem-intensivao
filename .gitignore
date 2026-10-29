@@ -1,0 +1,10 @@
+# Gabarito das questões: roda só no Supabase, nunca no repositório público
+supabase/seed_keys.sql
+
+# Variáveis e chaves locais
+.env
+.env.*
+*.local
+
+.DS_Store
+Thumbs.db

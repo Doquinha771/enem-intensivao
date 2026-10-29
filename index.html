@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intensivão ENEM</title>
+  <meta name="description" content="Provas de Linguagens com questões reais do ENEM, XP, conquistas, desafios e modo coop.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' shape-rendering='crispEdges'%3E%3Cpath fill='%23ffc94d' d='M4 0h4v1h2v1h1v2h1v8h-1v-1h-1v1H9v-1H8v1H7v-1H5v1H4v-1H3v1H2v-1H1v1H0V4h1V2h1V1h2z'/%3E%3Cpath fill='%23171629' d='M3 4h1v2H3zm5 0h1v2H8z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <button class="logo" id="logo" type="button" aria-label="Intensivão ENEM">INTENSIVÃO<span>ENEM</span></button>
+    <nav class="nav" id="nav" hidden>
+      <a href="#painel">Painel</a>
+      <a href="#salas">Salas</a>
+      <a href="#stats">Estatísticas</a>
+      <a href="#conquistas">Conquistas</a>
+      <a href="#ranking">Ranking</a>
+      <a href="#perfil">Perfil</a>
+    </nav>
+    <div class="who" id="who"></div>
+  </header>
+
+  <main id="app" class="app">
+    <p class="loading" id="loading">Carregando...</p>
+  </main>
+
+  <div class="mascot" id="mascot" title="Clique em mim"></div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
